@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Twenty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<script>
+$(document).ready(function(){
+    $("button").click(function(){
+       $.get("/contact", function(data, status){
+		$("#show").load("/contact");
+        });
+    });
+});
+$(document).ready(function(){
+    $("#1").click(function(){
+        $.get("/right", function(data, status){
+		$("#show").load("/right");
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#2").click(function(){
+        $.get("/none", function(data, status){
+		$("#show").load("/none");
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#3").click(function(){
+        $.get("/left", function(data, status){
+		$("#show").load("/left");
+        });
+    });
+});
+
+
+
+
+
+
+</script>
+<script>
+		$(document).ready(function(){
+    $("hide").click(function(){
+        $("#show").hide("slow", function(){
+        });
+    });
+});
+</script>
+
+
+	</head>
+	<body class="index">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><button class="button special">Twenty</button></h1>
+					<nav id="nav">
+						<ul>
+							<a><li><button class="button special" id="3">Left Sidebar</button></li></a>
+							<li><a><button class="button special" id="1">Right Sidebar</button></a></li>
+							<li><a><button class="button special" id="2">No Sidebar</button></a></li>
+							<li><button class="button special"><a>Contact</a></button></li>
+							<li><a href="#" class="button special">Sign Up</a></li>
+						</ul>
+					</nav>
+					
+				</header>
+
+
+<!-- Banner -->
+				<section id="banner">
+
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+						
+						-->
+					
+					<div class="inner">
+
+						<header>
+							<h2>GMIT</h2>
+						</header>
+						<p>This is <strong>GMIT</strong>, an expensive
+						<br />
+						alright college
+						<br />
+						by <a href="http://html5up.net">One Desperate student</a>.</p>
+						<footer>
+							<ul class="buttons vertical">
+								<li><a><button id="hide" class="button fit scrolly">Click me</button></a></li>
+							</ul>
+						</footer>
+
+					</div>
+
+				</section> 
+				
+					<div id="show">
+
+
+
+
+	</div>
+
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+		
+
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
